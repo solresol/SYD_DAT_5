@@ -30,8 +30,8 @@ Enterprise software documentation analysis
         * c) RANSAC regression analysis
         * d) Graph regression: shareprice & web traffic
         * e) Graph regression: article length & web traffic
-        
 ![g2](graphs/ALL_ScatterPlots_01.png)
+
 | RANSAC regressions  |    |
 | ------------- |:-------------:|
 | ![g3](graphs/ArticleLength_RANSAC_shareprice_alexarank_01.png) | ![g4](graphs/ArticleLength_RANSAC_wordlen_alexarank_01.png) |

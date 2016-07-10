@@ -30,11 +30,14 @@ Enterprise software documentation analysis
         * c) RANSAC regression analysis
         * d) Graph regression: shareprice & web traffic
         * e) Graph regression: article length & web traffic
+       
 | RANSAC regression  |    |
 | ------------- |:-------------:|
 | ![g3](graphs/ArticleLength_RANSAC_shareprice_alexarank_01.png) | ![g4](graphs/ArticleLength_RANSAC_wordlen_alexarank_01.png) |
 | ![g5](graphs/ArticleLength_RANSAC_wordlen_shareprice_01.png)   ||
+
     4. Cluster analysis 
+    
 | KMeans clusters |               |
 | -------------   |:-------------:|
 | ![g6](graphs/ArticleDistribution_clusters2dPlot.png) | ![g7](graphs/ALL_ArticleLengthDist_KMeans_3dPlot.png) |
@@ -44,7 +47,7 @@ Enterprise software documentation analysis
         * d) Test best number of clusters - not finished
     5. Preliminary results
 ![g8](graphs/ALL_ArticleLengthDist_ClusterResults_01.png)
-        * Regression analysis of Alexa web traffic rank for docs domain
+        * Regression analysis of Alexa web traffic rank, shareprice and mean article length
 	* KMeans clusters for article length distributions
 	
         

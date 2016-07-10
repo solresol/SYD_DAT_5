@@ -23,6 +23,7 @@ Enterprise software documentation analysis
         * b) Descriptive statistics of article word count
         * c) Test distribution normalility/ pairwise - not finished   
 ![g1](graphs/ALL_ArticleLengthDistributions_01.png)
+
     3. Regression tests
         * a) Load company data add docs metrics  
 	* b) Scatter plots

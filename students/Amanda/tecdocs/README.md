@@ -20,41 +20,36 @@ Enterprise software documentation analysis
 	* f) Graph total docs pages
     2. Distributions of article length
         * a) Plot doc set article length distributions
-![g1](graphs/ALL_ArticleLengthDistributions_01.png)
         * b) Descriptive statistics of article word count
         * c) Test distribution normalility/ pairwise - not finished   
+![g1](graphs/ALL_ArticleLengthDistributions_01.png)
+
     3. Regression tests
-  
-![g2](graphs/ALL_ScatterPlots_01.png)
         * a) Load company data add docs metrics  
 	* b) Scatter plots
         * c) RANSAC regression analysis
         * d) Graph regression: shareprice & web traffic
         * e) Graph regression: article length & web traffic
+![g2](graphs/ALL_ScatterPlots_01.png)
 
-
-| RANSAC regression analysis |    |
+| RANSAC regressions  |    |
 | ------------- |:-------------:|
 | ![g3](graphs/ArticleLength_RANSAC_shareprice_alexarank_01.png) | ![g4](graphs/ArticleLength_RANSAC_wordlen_alexarank_01.png) |
 | ![g5](graphs/ArticleLength_RANSAC_wordlen_shareprice_01.png)   ||
 
-
     4. Cluster analysis 
-    
-| KMeans analysis |               |
-| -------------   |:-------------:|
-| ![g6](graphs/ArticleDistribution_clusters2dPlot.png) | ![g7](graphs/ALL_ArticleLengthDist_KMeans_3dPlot.png) |
-  
         * a) Plot clusters in 2d (mean, skew)
         * b) 3D cluster plot
         * c) Article length distribution clusters
-        
-    5. Preliminary results
-    
-![g8](graphs/ALL_ArticleLengthDist_ClusterResults_01.png)
+        * d) Test best number of clusters - not finished
+| KMeans clusters |               |
+| -------------   |:-------------:|
+| ![g6](graphs/ArticleDistribution_clusters2dPlot.png) | ![g7](graphs/ALL_ArticleLengthDist_KMeans_3dPlot.png) |
 
-        * Regression analysis of Alexa web traffic rank for docs domain
+    5. Preliminary results
+        * Regression analysis of Alexa web traffic rank, shareprice and mean article length
 	* KMeans clusters for article length distributions
+![g8](graphs/ALL_ArticleLengthDist_ClusterResults_01.png)
 	
         
 ##### Next steps

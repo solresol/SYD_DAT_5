@@ -1,5 +1,5 @@
 
-##Homework - Due July 25th 2016
+## Homework - Due July 25th 2016
 
 * For the following, continue to use the github repository you made for your project
 * You don't have to use the same data that you used from the previous homework assignment if you have decided to change what your project is about.
@@ -21,6 +21,7 @@ K-Means Clustering works well.
 Kmeans cluster graphs are below: 
 
 * Clusters of Supplier Cost based on robot strength
+
 ![tag](cluster_Strength&Cost.png)
 
 The silhouette score is 0.581. 

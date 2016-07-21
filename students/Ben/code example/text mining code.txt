@@ -1,0 +1,29 @@
+#finds all excel files
+import os
+
+path = 'C:\Users\malonc01\Desktop\QC' 
+files = os.listdir(path)
+
+# walking around directory and PDT files 
+
+files_txt = [i for i in files if i.endswith('.xlsx')]
+print files_txt
+
+# Gets data from excel files:
+import xlrd
+Data = []
+Time = []
+
+for i in files_txt:
+    workbook = xlrd.open_workbook(str(path) + "\\"  + str(i))
+    worksheet1 = workbook.sheet_by_index(5) 
+    Data.append(worksheet1.cell_value(10,8))
+
+
+import glob
+files = glob.glob("C:\Users\User\Desktop\*.xlsx")
+
+for filename in files:
+    workbook = xlrd.open_workbook(filename )
+    for sheet in workbook.sheets():
+        Data.append(sheet.cell_value(10,8))

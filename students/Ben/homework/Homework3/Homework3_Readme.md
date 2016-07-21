@@ -59,11 +59,11 @@ array([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 
 ### Try building decision trees on your data. If you think simplicity would be good, try to make it as simple as possible. If you think accuracy is more important, use ensembling or any other techniques that you have learned.
 
-* Bagging Regressor with scatter plot as below:
+* Bagging Regressor with scatter plot of predicted y values and actual y values as below:
  
 ![whatever](baggingRegScat.png)
 
-* Random Forest Tree with scatter plot as below:
+* Random Forest Tree with scatter plot of predicted y values and actual y values as below:
 
 ![whatever](RandomFroestTreeScat.png)
 
@@ -73,14 +73,25 @@ The selected model is Lasso model with Robot Strength data as X and Supplier Cos
 * explained_variance_score = 0.846
 * mean_absolute_error = 39552
 * median_absolute_error = 32887
-* Coefficient of determination = 0.840
+* Coefficient of determination (r2) = 0.840
+
+The definition of As explained variance ratio is the ratio of the explained variance( variance of the model's predictions)  to the total variance. (sample variance of the dependent variable)
+The definition of R2 is that the proportion of the variance in the dependent variable that is predictable from the independent variable. 
+
+Both explained variance ratio and R2 is the numerical indication that the created Lasso regression line fits 84% well with the real data point. The interpretation is 84% of the varibility in the selected actual values of supplier cost can be explained by the predicted values of supplier cost. 
+
+The mean absolute error and median absolute error are quantities used to measure how close forcasts or predictions are to the eventual outcomes. 
+
+The mean absolute error is the average of the absolute errors between the predicted supplier cost and the actual supplier. The mean value of all supplier cost is 251976. The ratio of mean_absolute_error and mean of total is 15.6% and ratio of median_absolute_error and mean of total is 13.05% 
+
 
 #### K-Fold Cross Valuation 
 
 10 folds of cross validation were applied with the following mean values: 
-* r2 = -1.025
+* r2 = -1.025? 
 * mean_abolute_error = 54163
 * median_abolute_error = 49002
+As the computed r2 value is negative, it indicates something has gone wrong...
 
 #### GridSearch 
 
@@ -89,3 +100,6 @@ GridSearch with 6 folds and paramatters of 'fit_intercept', 'normalize', 'copy_X
 * r2= 0.79
 * mean_abolute_error = 44794
 * median_abolute_error = 37281
+
+Comparing the results from GridSearch with a simple train_test_split evaluation, it's seen that the model performance has decreased with GridSearch. In other words,  there was positive bias with the train_test_split evaluation and the computed model performance  was exceptionally high. GridSearch brought the performance lower with reduced positive bias. 
+

@@ -19,16 +19,19 @@
 K-Means Clustering works well. 
 
 Kmeans cluster graphs are below: 
+
 1. Clusters of Supplier Cost based on robot strength
 ![tag](cluster_Strength&Cost.png)
 The silhouette score is 0.581. 
 
-2. Clusters of Robot Strength based on cost per strength 
+2. Clusters of Robot Strength based on cost per strength
+
 ![tag](cluster_CPS_and_robot_strength.png)
 
 The silhouette score is 0.5675
 
 3. Clusters of Supplier Cost based on Cost Per Strength 
+
 ![tag](cluster_SupplierCost_and_costPerStrength.png)
 
 The silhouette score is 0.5776
@@ -39,6 +42,7 @@ dbscan = sklearn.cluster.DBSCAN(eps=0.3, min_samples=3)
 dbscan_cs= dbscan.fit(target_info)
 dbscan_cs.labels_ 
 Output: 
+
 array([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
@@ -52,9 +56,12 @@ array([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 
 
 * Try building decision trees on your data. If you think simplicity would be good, try to make it as simple as possible. If you think accuracy is more important, use ensembling or any other techniques that you have learned.
-- Tried Bagging Regressor with scatter plot as below
+- Tried Bagging Regressor with scatter plot as below:
+ 
 ![whatever](baggingRegScat.png)
-- Tried Random Forest Tree with scatter plot as below
+
+- Tried Random Forest Tree with scatter plot as below:
+
 ![whatever](RandomFroestTreeScat.png)
 
 * Modify one of the models you have created so that you can evaluate its bias-variance trade-off. (You can use one of the models from the previous homework assignment if you think that looks more interesting.)
@@ -67,7 +74,7 @@ array([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 
 2. K-Fold 
 
-6 folds of cross validation was applied with the following mean values: 
+10 folds of cross validation was applied with the following mean values: 
 * r2 = -1.025
 * mean_abolute_error = 54163
 * median_abolute_error = 49002

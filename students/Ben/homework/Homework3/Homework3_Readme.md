@@ -89,6 +89,3 @@ GridSearch with 6 folds and paramatters of 'fit_intercept', 'normalize', 'copy_X
 * r2= 0.79
 * mean_abolute_error = 44794
 * median_abolute_error = 37281
-
-
-
